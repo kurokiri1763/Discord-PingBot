@@ -1,1 +1,1 @@
-# java-discordbot-project
+# javaで作るdiscordの定期連絡bot
