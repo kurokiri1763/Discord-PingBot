@@ -35,7 +35,7 @@ java {
 
 application {
     // Define the main class for the application.
-    mainClass = 'my.discordbot.project.App'
+    mainClass = 'my.discordbot.project.BotMain'
 }
 
 tasks.named('test') {
