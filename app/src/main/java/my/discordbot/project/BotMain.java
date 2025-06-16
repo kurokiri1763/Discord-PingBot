@@ -1,11 +1,12 @@
 package my.discordbot.project;
 
-public class BotMain {
-    public String getGreeting() {
-        return "Hello World!";
-    }
+import net.dv8tion.jda.api.JDABuilder;
 
-    public static void main(String[] args) {
-        System.out.println(new BotMain().getGreeting());
+public class BotMain {
+    public static void main(String[] args) throws Exception {
+        String token = System.getenv("DISCORD_BOT_TOKEN");
+        JDABuilder.createDeffault(token)
+                .addEventListeners(new Scheduler())
+                .build();
     }
 }
